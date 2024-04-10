@@ -1,113 +1,108 @@
-import Image from "next/image";
+import { permanentMarker } from "./fonts";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className={styles.container}>
+      <fieldset title="Styling Technologies" role="group">
+        <legend>Styling</legend>
+        <ul className="flex gap-2 flex-wrap max-w-full min-w-fit w-[90%] lg:w-[70%]" role="list">
+          <li>
+            <i>CSS</i>
+          </li>
+          <li>
+            <i>SASS</i>
+          </li>
+          <li>
+            <i>Tailwind</i>
+          </li>
+          <li>
+            <i>MaterialUI</i>
+          </li>
+          <li>
+            <i>AntDesign</i>
+          </li>
+          <li>
+            <i>NextUI</i>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset title="Programming Technologies" role="group">
+        <legend>Programming</legend>
+        <ul className="flex gap-2 flex-wrap max-w-full min-w-fit w-[90%] lg:w-[70%]" role="list">
+          <li>
+            <i>Javascript</i>
+          </li>
+          <li>
+            <i>Typescript</i>
+          </li>
+          <li>
+            <i>NodeJS</i>
+          </li>
+          <li>
+            <i>ReactJS</i>
+          </li>
+          <li>
+            <i>NextJS</i>
+          </li>
+          <li>
+            <i>NestJS</i>
+          </li>
+          <li>
+            <i>Java</i>
+          </li>
+          <li>
+            <i>Spring-Boot</i>
+          </li>
+          <li>
+            <i>SQL</i>
+          </li>
+          <li>
+            <i>NoSQL</i>
+          </li>
+        </ul>
+      </fieldset>
+      <article
+        className="px-4 sm:px-12 pt-28 pb-40 min-[320px]:pt-24 min-[320px]:pb-30 min-[480px]:pb-24 min-[510px]:pt-14 sm:pb-28 lg:pb-24"
+        role="article"
+      >
+        <h3
+          className={
+            permanentMarker.className +
+            " font-extrabold capitalize text-sm sm:p-4 md:text-xl lg:text-2xl xl:text-3xl leading-loose mt-4"
+          }
+        >
+          <i>Fullstack</i> consultant - <i>Javascript</i> <i>Typescript</i> Programmer
+        </h3>
+        <div className="lg:columns-2 text-balance">
+          <p>
+            Integrating academic knowledge with additional sought for and self-taught concepts and
+            techniques, I came out a Fullstack Engineer having specialized at first in the{" "}
+            <i>Javascript</i> <i>Typescript</i> programming stack consisting of <i>NodeJS</i> &{" "}
+            <i>ReactJS</i>, while having gradually added multiple libraries and frameworks to my
+            Arsenal due to either role assignments or to performance and security pressures which
+            lead to web docs, including <i>ExpressJS</i> <i>PassportJS</i> <i>AuthJS</i>{" "}
+            <i>NextJS</i> & <i>NestJS</i>, among others.
+          </p>
+          <p>
+            This being said, it implies my familiarity with the majority of the expected browser and
+            server features. The later uses databases most of the time, which brings the need for{" "}
+            <i>SQL</i> skills as a universal query language for every well established Relational
+            DBMS and other more flexible NoSQL DBMS like <i>MongoDB</i>.
+          </p>
+          <p>
+            Fortunately, I've had the opportunity to sharpen my expertise in <i>SQL</i> and{" "}
+            <i>MongoDB</i> through roles involving <i>SQL</i> reporting and complex MongoDB queries
+            for large scale apps.
+          </p>
+          <p>
+            Anyhow, assuming my choice of this field of endeavor of which factors and tools seem the
+            most volatile and various compared to others, I'm on a day to day schedule of perpetual
+            learning, stacking more technologies and IT skills not limited by web development, with
+            no consideration for unreasonable rest, until the D-day.
+          </p>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </article>
     </main>
   );
 }

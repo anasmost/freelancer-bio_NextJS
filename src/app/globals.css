@@ -3,31 +3,63 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-color: black;
+  --shadow-color: #0000004b;
+  --background-start-color: #cef0f7;
+  --background-end-color: white;
+  --background-ff-color: #b51b87;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-color: white;
+    --shadow-color: #ffffff92;
+    --background-start-color: black;
+    --background-end-color: black;
   }
 }
 
+html {
+  display: contents;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  contain: content;
+  height: 100svh;
+  color: var(--foreground-color);
+  background: linear-gradient(135deg, transparent, var(--background-end-color))
+    var(--background-start-color);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+i {
+  display: inline-block;
+  border-radius: 5%;
+  padding: 0.125em 0.25em;
+  animation: blink 3s ease-out infinite alternate;
+  line-height: initial;
+}
+
+@keyframes blink {
+  to {
+    box-shadow: 1px 1px 10px var(--shadow-color);
+  }
+}
+
+p {
+  margin-block: 0.5em;
+}
+
+body > [data-overlay-container] {
+  display: contents;
 }
