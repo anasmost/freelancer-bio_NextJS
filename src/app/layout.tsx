@@ -1,8 +1,8 @@
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import { inter } from "./fonts";
+import { sen } from "./fonts";
 import "./globals.css";
-import { Providers } from "./providers";
+import { GlobalProviders, HashProvider } from "./providers";
 
 export { initialMetadata as metadata } from "./metadata";
 
@@ -15,19 +15,30 @@ export const dynamic: "force-static" | "auto" | "force-dynamic" | "error" | unde
 
 export default function RootLayout({
   children,
+  home,
+  bio,
+  about,
 }: Readonly<{
   children: React.ReactNode;
+  home: React.ReactNode;
+  bio: React.ReactNode;
+  about: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Providers>
-          <NavBar />
-          <div className="max-w-screen-xl m-auto p-4 sm:p-unit-xl flex flex-col gap-4">
+      <body className={sen.className}>
+        <GlobalProviders>
+          <HashProvider>
+            <NavBar />
+          </HashProvider>
+          <div className="max-w-screen-xl m-auto p-4 sm:p-7 flex flex-col gap-20 sm:gap-10">
             {children}
+            {home}
+            {bio}
+            {about}
           </div>
           <Footer />
-        </Providers>
+        </GlobalProviders>
       </body>
     </html>
   );

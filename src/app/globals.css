@@ -7,7 +7,7 @@
   --shadow-color: #0000004b;
   --background-start-color: #cef0f7;
   --background-end-color: white;
-  --background-ff-color: #b51b87;
+  --background-ff-color: theme("colors.red.500");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,19 +21,24 @@
 
 html {
   display: contents;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 
 body {
-  contain: content;
-  height: 100svh;
+  /* contain: content; */
+  min-height: 100svh;
   color: var(--foreground-color);
   background: linear-gradient(135deg, transparent, var(--background-end-color))
     var(--background-start-color);
   overflow-y: auto;
-  scrollbar-width: thin;
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
+}
+
+* {
+  line-height: 1.5em;
 }
 
 @layer utilities {

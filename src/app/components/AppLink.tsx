@@ -2,30 +2,39 @@
 
 import { Link as UILink, type LinkProps } from "@nextui-org/react";
 import Link, { type LinkProps as NLinkProps } from "next/link";
-import { usePathname } from "next/navigation";
+import { useHash } from "@/app/providers";
 
 export default function AppLink({
   href,
-  children,
   className,
   matches,
   ...props
 }: Partial<LinkProps & NLinkProps & { matches: string[] }>) {
-  const pathname = usePathname();
+  const hash = useHash();
 
   return (
     <UILink
       as={Link}
       href={href}
-      aria-current="page"
+      replace={true}
+      aria-current="location"
       color="foreground"
       className={
-        (matches?.includes(pathname) || pathname === href ? "text-rose-600 font-semibold" : "") +
+        "uppercase " +
+        (matches?.includes(hash) || hash === href
+          ? "text-red-500 font-semibold"
+          : "text-[var(--foreground-color)]") +
         (className ? " " + className : "")
       }
+      onClick={() =>
+        dispatchEvent(
+          new HashChangeEvent("hashchange", {
+            oldURL: hash,
+            newURL: href,
+          })
+        )
+      }
       {...props}
-    >
-      {children}
-    </UILink>
+    />
   );
 }

@@ -1,8 +1,12 @@
-export { about as metadata } from "@/app/metadata";
-
 export default function About() {
   return (
-    <aside className="h-full flex flex-col gap-4 items-center justify-center text-2xl md:text-4xl text-center">
+    <section
+      id="about"
+      className="flex-grow flex flex-col gap-4 items-center justify-center text-center sm:flex-[1_1_80svh]"
+    >
+      <h2 className="text-center uppercase text-3xl sm:text-4xl border-b-rose-500 border-b-5">
+        About
+      </h2>
       <p className="text-xl sm:text-2xl md:text-3xl">
         Please reach out to me, for content ideas or business matters @<br />
         <a
@@ -12,12 +16,12 @@ export default function About() {
           anasel.consultant@gmail.com
         </a>
       </p>
-      <footer className="text-medium sm:text-lg md:text-xl opacity-65">
+      <aside className="text-medium sm:text-lg md:text-xl opacity-65">
         <p>Development slowly in progress...</p>
         <p>
           Built with <i>Next.js</i>
         </p>
-      </footer>
-    </aside>
+      </aside>
+    </section>
   );
 }

@@ -65,7 +65,7 @@
   height: 100%;
   border: 10px solid transparent;
   border-top-color: var(--foreground-color);
-  background-color: #fff1f1;
+  background-color: theme(colors.red.50);
   mix-blend-mode: multiply;
   pointer-events: none;
   will-change: transform;
