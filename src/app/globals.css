@@ -5,17 +5,14 @@
 :root {
   --foreground-color: black;
   --shadow-color: #0000004b;
-  --background-start-color: #cef0f7;
+  --background-start-color: #f4fdff;
   --background-end-color: white;
-  --background-ff-color: theme("colors.red.500");
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
+  &.dark {
     --foreground-color: white;
     --shadow-color: #ffffff92;
     --background-start-color: black;
-    --background-end-color: black;
+    --background-end-color: #3d3a3a;
   }
 }
 
@@ -30,7 +27,7 @@ body {
   min-height: 100svh;
   color: var(--foreground-color);
   background: linear-gradient(135deg, transparent, var(--background-end-color))
-    var(--background-start-color);
+    var(--background-start-color) !important;
   overflow-y: auto;
   scroll-behavior: smooth;
   display: flex;
@@ -67,4 +64,13 @@ p {
 
 body > [data-overlay-container] {
   display: contents;
+}
+
+.dark .next-error-h1 {
+  &,
+  & ~ *,
+  :has(~ &) {
+    color: var(--foreground-color) !important;
+    border-color: var(--foreground-color) !important;
+  }
 }

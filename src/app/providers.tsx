@@ -1,10 +1,17 @@
 "use client";
 
-import { NextUIProvider } from "@nextui-org/react";
 import { createContext, memo, useContext, useEffect, useLayoutEffect, useState } from "react";
+import { NextUIProvider } from "@nextui-org/react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 export function GlobalProviders({ children }: { children: React.ReactNode }) {
-  return <NextUIProvider>{children}</NextUIProvider>;
+  return (
+    <NextUIProvider>
+      <NextThemesProvider attribute="class" defaultTheme="dark" enableColorScheme enableSystem>
+        {children}
+      </NextThemesProvider>
+    </NextUIProvider>
+  );
 }
 
 const HashContext = createContext<string>("");

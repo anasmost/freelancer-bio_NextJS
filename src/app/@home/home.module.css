@@ -4,9 +4,10 @@
     content: "\00a0";
     display: inline-block;
     line-height: 1.1em;
-    border-bottom: 5px solid var(--background-ff-color);
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
     width: fit-content;
-    animation: 4s ease-in-out 1s infinite forwards text-animation;
+    animation: 7s ease-in-out 0.75s infinite forwards text-animation;
     transform-origin: left center;
 
     @media screen and (max-width: theme(screens.sm)) {
@@ -18,40 +19,46 @@
 @media screen and (min-width: theme(screens.sm)) {
   @keyframes text-animation {
     from {
-      content: "\00a0";
       transform: scaleX(0);
     }
-    9% {
+    4% {
+      content: "\00a0";
       transform: scaleX(1);
     }
+    8% {
+      content: "&d=X HTb+C_?";
+    }
+    9% {
+      content: "cnMr GY=$4gJ";
+    }
     10% {
-      content: "@jdy pksdodz";
+      content: "ajdy _VuD5_}";
+    }
+    11% {
+      content: "an$# Pama9Vd";
+    }
+    12% {
+      content: "an$# m^do@z!";
     }
     13% {
-      content: "Ajdy pksdodz";
+      content: "ana: mo]YREx";
     }
-    16% {
-      content: "An$# m^do@z!";
-    }
-    19% {
-      content: "@n!# modo$z!";
-    }
-    22% {
+    14% {
       content: "Ana$ mo^t@!@";
     }
-    25% {
-      content: "An$# m^do@z!";
+    15% {
+      content: "Anas mos&$Fm";
     }
-    28% {
+    16% {
+      content: "Anas mosth!2";
+    }
+    17% {
       content: "Anas mosta!@";
     }
-    31% {
-      content: "Anas most!!@";
+    18% {
+      content: "Anas mostaf@";
     }
-    34% {
-      content: "Anas mosta!@";
-    }
-    37%,
+    19%,
     to {
       content: "Anas Mostafa";
     }

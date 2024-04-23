@@ -29,7 +29,7 @@ export default function NavBar() {
     >
       <NavbarBrand className={zeyada.className}>
         <AppLink href="/" className="gap-4">
-          <p className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r to-[var(--foreground-color)] from-red-500">
+          <p className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 dark:from-red-950 to-[var(--foreground-color)] dark:via-red-900 dark:to-[var(--foreground-color)]">
             Anas El Mostafa
           </p>
         </AppLink>
@@ -42,31 +42,31 @@ export default function NavBar() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <AppLink href="#home" matches={["/", ""]}>
+          <AppLink href="/#home" matches={["/", ""]}>
             Home
           </AppLink>
         </NavbarItem>
         <NavbarItem>
-          <AppLink href="#bio">Bio</AppLink>
+          <AppLink href="/#bio">Bio</AppLink>
         </NavbarItem>
         <NavbarItem>
-          <AppLink href="#about">About</AppLink>
+          <AppLink href="/#about">About</AppLink>
         </NavbarItem>
       </NavbarContent>
 
       <NavbarMenu className="py-6 gap-2">
         <NavbarMenuItem className="border-b-1 border-red-900 w-full text-end">
-          <AppLink href="#home" matches={["/", ""]} onClick={closeMenu}>
+          <AppLink href="/#home" matches={["/", ""]} onClick={closeMenu}>
             Home
           </AppLink>
         </NavbarMenuItem>
         <NavbarMenuItem className="border-b-1 border-red-900 w-full text-end">
-          <AppLink href="#bio" onClick={closeMenu}>
+          <AppLink href="/#bio" onClick={closeMenu}>
             Bio
           </AppLink>
         </NavbarMenuItem>
         <NavbarMenuItem className="border-b-1 border-red-900 w-full text-end">
-          <AppLink href="#about" onClick={closeMenu}>
+          <AppLink href="/#about" onClick={closeMenu}>
             About
           </AppLink>
         </NavbarMenuItem>

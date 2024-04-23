@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import img from "@/../public/images/Profile.png";
-import styles from "./page.module.css";
+import styles from "./home.module.css";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       className="uppercase text-3xl sm:text-5xl sm:flex-[1_1_80svh] flex items-center"
     >
       <p
-        className={`${styles["animated-text"]} flex-1 flex flex-col gap-4 font-bold text-center sm:text-start`}
+        className={`${styles["animated-text"]} flex-1 flex flex-col gap-4 font-bold text-center sm:text-start before:border-b-red-500 dark:before:border-b-red-800`}
       >
         fullstack developer
       </p>

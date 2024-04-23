@@ -22,7 +22,7 @@ export default function AppLink({
       className={
         "uppercase " +
         (matches?.includes(hash) || hash === href
-          ? "text-red-500 font-semibold"
+          ? "text-red-500 dark:text-red-900 font-semibold"
           : "text-[var(--foreground-color)]") +
         (className ? " " + className : "")
       }

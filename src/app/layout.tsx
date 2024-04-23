@@ -1,7 +1,9 @@
+import React from "react";
+import "./globals.css";
+import * as fonts from "./fonts";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import { sen } from "./fonts";
-import "./globals.css";
+import { ThemeSwitcher } from "./components/ThemeSwitcher";
 import { GlobalProviders, HashProvider } from "./providers";
 
 export { initialMetadata as metadata } from "./metadata";
@@ -26,18 +28,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={sen.className}>
+      <body className={fonts.sen.className}>
         <GlobalProviders>
           <HashProvider>
             <NavBar />
           </HashProvider>
-          <div className="max-w-screen-xl m-auto p-4 sm:p-7 flex flex-col gap-20 sm:gap-10">
+          <div className="max-w-screen-xl m-auto p-4 sm:p-7 flex flex-col gap-20 sm:gap-10 *:!h-auto">
             {children}
             {home}
             {bio}
             {about}
           </div>
           <Footer />
+          <ThemeSwitcher />
         </GlobalProviders>
       </body>
     </html>

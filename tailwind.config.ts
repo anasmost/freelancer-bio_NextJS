@@ -23,7 +23,7 @@ const config: Config = {
       "2xl": "1536px",
     },
   },
-  darkMode: "media",
+  darkMode: "selector",
   plugins: [nextui()],
 };
 export default config;
