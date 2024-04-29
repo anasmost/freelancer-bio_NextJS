@@ -3,7 +3,10 @@ import styles from "./bio.module.css";
 
 export default function Bio() {
   return (
-    <section id="bio" className="sm:flex-[1_1_80svh] flex flex-col gap-4 items-center sm:pt-16">
+    <section
+      id="bio"
+      className="sm:flex-[1_1_80svh] flex flex-col gap-4 items-center sm:py-16 md:px-8 md:shadow-small md:dark:shadow-large"
+    >
       <h2 className="text-center uppercase text-3xl sm:text-4xl border-b-red-500 dark:border-b-red-800 border-b-5">
         Bio
       </h2>
@@ -21,13 +24,16 @@ export default function Bio() {
               <i>Tailwind</i>
             </li>
             <li>
-              <i>MaterialUI</i>
-            </li>
-            <li>
-              <i>AntDesign</i>
-            </li>
-            <li>
               <i>NextUI</i>
+            </li>
+            <li>
+              <i>Material UI</i>
+            </li>
+            <li>
+              <i>Ant Design</i>
+            </li>
+            <li>
+              <i>Prime React</i>
             </li>
           </ul>
         </fieldset>
@@ -52,12 +58,12 @@ export default function Bio() {
             <li>
               <i>NestJS</i>
             </li>
-            <li>
+            {/* <li>
               <i>Java</i>
             </li>
             <li>
               <i>Spring-Boot</i>
-            </li>
+            </li> */}
             <li>
               <i>SQL</i>
             </li>

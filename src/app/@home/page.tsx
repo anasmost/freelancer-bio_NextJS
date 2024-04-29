@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { motion } from "framer-motion";
-import img from "@/../public/images/Profile.png";
 import styles from "./home.module.css";
 
 export default function Home() {

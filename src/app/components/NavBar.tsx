@@ -9,7 +9,7 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   NavbarMenuToggle,
-} from "@nextui-org/react";
+} from "@nextui-org/navbar";
 import { startTransition, useState } from "react";
 import AppLink from "./AppLink";
 
@@ -20,7 +20,7 @@ export default function NavBar() {
 
   return (
     <Navbar
-      className="py-1 bg-white bg-opacity-50 backdrop-blur-lg shadow-sm"
+      className="py-1 bg-white bg-opacity-55 backdrop-blur-lg shadow-md shadow-[var(--shadow-color)] dark:shadow-[var(--shadow-color)]"
       maxWidth="xl"
       onMenuOpenChange={setIsMenuOpen}
       isMenuOpen={isMenuOpen}

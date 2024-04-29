@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { Switch } from "@nextui-org/react";
+import { Switch } from "@nextui-org/switch";
 import { MoonIcon, SunIcon } from "@/app/icons";
 
 import styles from "./ThemeSwitcher.module.css";

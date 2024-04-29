@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const initialMetadata: Metadata = {
   metadataBase: new URL("https://anasmost-bio.vercel.app/"),
-  title: "Anas Mostafa",
+  title: "Anas Mostafa | Fullstack",
   description:
     "Web Profile of Anas Mostafa, a web technical consultant. As a web developer, I consider this website being in gradual development with Next.js, as a starting point to establish my web presence.",
   authors: {
@@ -56,7 +56,7 @@ export const initialMetadata: Metadata = {
   openGraph: {
     url: "/",
     type: "website",
-    title: "Anas Mostafa",
+    title: "Anas Mostafa | Fullstack",
     description:
       "Web Profile of Anas Mostafa, a web technical consultant. As a web developer, I consider this website being in gradual development with Next.js, as a starting point to establish my web presence.",
     emails: "anasel.consultant@gmail.com",

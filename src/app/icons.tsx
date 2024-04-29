@@ -1,4 +1,4 @@
-import type { SwitchThumbIconProps } from "@nextui-org/react";
+import type { SwitchThumbIconProps } from "@nextui-org/switch";
 import React from "react";
 
 export const MoonIcon = ({

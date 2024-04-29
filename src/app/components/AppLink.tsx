@@ -1,6 +1,6 @@
 "use client";
 
-import { Link as UILink, type LinkProps } from "@nextui-org/react";
+import { Link as UILink, type LinkProps } from "@nextui-org/link";
 import Link, { type LinkProps as NLinkProps } from "next/link";
 import { useHash } from "@/app/providers";
 

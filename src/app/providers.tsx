@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, memo, useContext, useEffect, useLayoutEffect, useState } from "react";
-import { NextUIProvider } from "@nextui-org/react";
+import { NextUIProvider } from "@nextui-org/system";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 export function GlobalProviders({ children }: { children: React.ReactNode }) {

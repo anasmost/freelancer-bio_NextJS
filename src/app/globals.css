@@ -4,13 +4,13 @@
 
 :root {
   --foreground-color: black;
-  --shadow-color: #0000004b;
+  --shadow-color: #0000000c;
   --background-start-color: #f4fdff;
   --background-end-color: white;
 
   &.dark {
     --foreground-color: white;
-    --shadow-color: #ffffff92;
+    --shadow-color: #ffffff22;
     --background-start-color: black;
     --background-end-color: #3d3a3a;
   }
