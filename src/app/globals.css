@@ -6,12 +6,14 @@
   --foreground-color: black;
   --shadow-color: #0000000c;
   --background-start-color: #f4fdff;
+  --background-via-color: theme(colors.red.100);
   --background-end-color: white;
 
   &.dark {
     --foreground-color: white;
     --shadow-color: #ffffff22;
     --background-start-color: black;
+    --background-via-color: theme(colors.red.950);
     --background-end-color: #3d3a3a;
   }
 }
@@ -26,12 +28,25 @@ body {
   /* contain: content; */
   min-height: 100svh;
   color: var(--foreground-color);
-  background: linear-gradient(135deg, transparent, var(--background-end-color))
+  background: radial-gradient(at 30% 34%, var(--background-start-color) 0px, transparent 50%),
+    /* radial-gradient(at 72% 2%, theme(colors.red.50) 0px, transparent 50%), */
+      radial-gradient(at 39% 47%, var(--background-end-color) 0px, transparent 50%),
+    radial-gradient(at 79% 28%, var(--background-via-color) 0px, transparent 35%),
+    radial-gradient(at 55% 80%, var(--background-end-color) 0px, transparent 50%),
     var(--background-start-color) !important;
   overflow-y: auto;
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: theme( screens.lg)) {
+    background: radial-gradient(at 30% 34%, var(--background-start-color) 0px, transparent 50%),
+      radial-gradient(at 92% 2%, theme(colors.red.50) 0px, transparent 40%),
+      radial-gradient(at 39% 47%, var(--background-end-color) 0px, transparent 50%),
+      radial-gradient(at 79% 28%, var(--background-via-color) 0px, transparent 35%),
+      radial-gradient(at 55% 80%, var(--background-end-color) 0px, transparent 50%),
+      var(--background-start-color) !important;
+  }
 }
 
 * {

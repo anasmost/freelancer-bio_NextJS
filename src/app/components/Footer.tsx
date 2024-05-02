@@ -4,7 +4,7 @@ import { Avatar } from "@nextui-org/avatar";
 
 export default function Footer() {
   return (
-    <footer className="backdrop-blur-lg bg-white bg-opacity-55 shadow-small dark:shadow-medium">
+    <footer className="backdrop-blur-lg bg-opacity-25 shadow-inner shadow-[var(--shadow-color)] dark:shadow-[var(--shadow-color)]">
       <p className={`text-center ${zeyada.className} text-3xl leading-10 font-bold my-3`}>
         Copyright{" "}
         <Avatar

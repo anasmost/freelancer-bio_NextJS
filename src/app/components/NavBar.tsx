@@ -20,7 +20,7 @@ export default function NavBar() {
 
   return (
     <Navbar
-      className="py-1 bg-white bg-opacity-55 backdrop-blur-lg shadow-md shadow-[var(--shadow-color)] dark:shadow-[var(--shadow-color)]"
+      className="py-1 backdrop-blur-lg bg-opacity-25 shadow-sm shadow-[var(--shadow-color)]"
       maxWidth="xl"
       onMenuOpenChange={setIsMenuOpen}
       isMenuOpen={isMenuOpen}
@@ -29,7 +29,7 @@ export default function NavBar() {
     >
       <NavbarBrand className={zeyada.className}>
         <AppLink href="/" className="gap-4">
-          <p className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 dark:from-red-950 to-[var(--foreground-color)] dark:via-red-900 dark:to-[var(--foreground-color)]">
+          <p className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 dark:from-red-950 to-[var(--foreground-color)] dark:via-30% dark:via-[var(--foreground-color)] dark:to-red-200">
             Anas El Mostafa
           </p>
         </AppLink>
@@ -55,17 +55,17 @@ export default function NavBar() {
       </NavbarContent>
 
       <NavbarMenu className="py-6 gap-2">
-        <NavbarMenuItem className="border-b-1 border-red-900 w-full text-end">
+        <NavbarMenuItem className="border-b-1 border-red-950 dark:border-red-50 w-full text-end">
           <AppLink href="/#home" matches={["/", ""]} onClick={closeMenu}>
             Home
           </AppLink>
         </NavbarMenuItem>
-        <NavbarMenuItem className="border-b-1 border-red-900 w-full text-end">
+        <NavbarMenuItem className="border-b-1 border-red-950 dark:border-red-50 w-full text-end">
           <AppLink href="/#bio" onClick={closeMenu}>
             Bio
           </AppLink>
         </NavbarMenuItem>
-        <NavbarMenuItem className="border-b-1 border-red-900 w-full text-end">
+        <NavbarMenuItem className="border-b-1 border-red-950 dark:border-red-50 w-full text-end">
           <AppLink href="/#about" onClick={closeMenu}>
             About
           </AppLink>
