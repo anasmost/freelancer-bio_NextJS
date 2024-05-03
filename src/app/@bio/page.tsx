@@ -1,4 +1,4 @@
-import { permanentMarker } from "@/app/fonts";
+import { dekko } from "../fonts";
 import styles from "./bio.module.css";
 
 export default function Bio() {
@@ -73,13 +73,13 @@ export default function Bio() {
           </ul>
         </fieldset>
         <article
-          className="px-4 sm:px-12 pt-28 pb-40 min-[320px]:pt-24 min-[320px]:pb-30 min-[480px]:pb-24 min-[510px]:pt-14 sm:pb-28 lg:pb-24"
+          className="px-4 sm:px-12 pt-24 pb-40 min-[573px]:pt-20 sm:pt-14 sm:pb-28 lg:pb-24"
           role="article"
         >
           <h3
             className={
-              permanentMarker.className +
-              " font-extrabold capitalize text-center text-sm sm:p-4 md:text-xl lg:text-2xl xl:text-3xl leading-loose mt-4"
+              dekko.className +
+              " tracking-widest font-extrabold capitalize text-center text-lg py-4 md:text-xl lg:text-2xl xl:text-3xl leading-loose mt-4 mb-2"
             }
           >
             <i>Fullstack</i> consultant - <i>Javascript</i> <i>Typescript</i> Programmer

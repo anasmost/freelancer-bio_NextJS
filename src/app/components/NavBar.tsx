@@ -29,7 +29,7 @@ export default function NavBar() {
     >
       <NavbarBrand className={zeyada.className}>
         <AppLink href="/" className="gap-4">
-          <p className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 dark:from-red-950 to-[var(--foreground-color)] dark:via-30% dark:via-[var(--foreground-color)] dark:to-red-200">
+          <p className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 dark:from-red-950 to-[var(--foreground-color)] dark:via-[var(--foreground-color)] dark:via-30% dark:to-red-900 dark:to-90%">
             Anas El Mostafa
           </p>
         </AppLink>

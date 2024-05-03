@@ -7,7 +7,7 @@
     border-bottom-style: solid;
     border-bottom-width: 5px;
     width: fit-content;
-    animation: 6s ease-in-out 0.75s infinite forwards text-animation;
+    animation: 8s ease-in-out 0.75s infinite forwards text-animation;
     transform-origin: left center;
 
     @media screen and (max-width: theme(screens.sm)) {
@@ -41,22 +41,22 @@
       content: "an$# m^do@z!";
     }
     13% {
-      content: "ana: mo]YREx";
+      content: "an!: mo]YREx";
     }
     14% {
-      content: "Ana$ mo^t@!@";
+      content: "An?$ mo^t@!@";
     }
     15% {
-      content: "Anas mos&$Fm";
+      content: "Ana! mos&$Fm";
     }
     16% {
-      content: "Anas mosth!2";
+      content: "Ana$ most@!2";
     }
     17% {
-      content: "Anas mosta!@";
+      content: "Ana? mosta!@";
     }
     18% {
-      content: "Anas mostaf@";
+      content: "Ana! mostaf@";
     }
     19%,
     to {

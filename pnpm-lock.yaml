@@ -58,6 +58,9 @@ devDependencies:
   postcss:
     specifier: ^8.4.38
     version: 8.4.38
+  postcss-scrollbar:
+    specifier: ^0.5.1
+    version: 0.5.1(postcss@8.4.38)
   tailwindcss:
     specifier: ^3.4.3
     version: 3.4.3
@@ -1827,6 +1830,16 @@ packages:
       postcss: ^8.4.31
     dependencies:
       postcss: 8.4.38
+      postcss-value-parser: 4.2.0
+    dev: true
+
+  /postcss-scrollbar@0.5.1(postcss@8.4.38):
+    resolution: {integrity: sha512-OPvwloab5juU3z5MOCRrYHRGAnDei8ObDIDBWpRfMt0zHptceOWWJUaaG+rodUJ4ItI+6fdaGs8uw77lCWqdbQ==}
+    peerDependencies:
+      postcss: ^8.0.0
+    dependencies:
+      postcss: 8.4.38
+      postcss-selector-parser: 6.0.16
       postcss-value-parser: 4.2.0
     dev: true
 

@@ -4,53 +4,78 @@
 
 :root {
   --foreground-color: black;
-  --shadow-color: #0000000c;
+  --shadow-color: #00000027;
   --background-start-color: #f4fdff;
   --background-via-color: theme(colors.red.100);
   --background-end-color: white;
+  --scrollbar-color: theme(colors.red.500);
+  --scrollbar-color-track: theme(colors.neutral.100);
 
   &.dark {
     --foreground-color: white;
-    --shadow-color: #ffffff22;
+    --shadow-color: #ffffff3c;
     --background-start-color: black;
     --background-via-color: theme(colors.red.950);
     --background-end-color: #3d3a3a;
+    --scrollbar-color: theme(colors.red.800);
+    --scrollbar-color-track: theme(colors.neutral.950);
   }
+}
+
+* {
+  line-height: 1.5em;
+  transition-property: background-color, border-color, scrollbar-color, background-image;
+  transition-duration: 0.4s;
 }
 
 html {
   display: contents;
   scrollbar-width: thin;
   scroll-behavior: smooth;
+  scrollbar-color: var(--scrollbar-color) var(--scrollbar-color-track);
 }
 
 body {
   /* contain: content; */
   min-height: 100svh;
   color: var(--foreground-color);
-  background: radial-gradient(at 30% 34%, var(--background-start-color) 0px, transparent 50%),
-    /* radial-gradient(at 72% 2%, theme(colors.red.50) 0px, transparent 50%), */
-      radial-gradient(at 39% 47%, var(--background-end-color) 0px, transparent 50%),
-    radial-gradient(at 79% 28%, var(--background-via-color) 0px, transparent 35%),
-    radial-gradient(at 55% 80%, var(--background-end-color) 0px, transparent 50%),
-    var(--background-start-color) !important;
+  background-color: var(--background-start-color) !important;
+  background-image: radial-gradient(at 30% 34%, var(--background-start-color) 0px, transparent 50%),
+    radial-gradient(at 100% 2%, var(--background-via-color) 0px, transparent 20%),
+    radial-gradient(at 39% 47%, var(--background-end-color) 0px, transparent 30%),
+    radial-gradient(at 79% 28%, var(--background-via-color) 0px, transparent 20%),
+    radial-gradient(at 55% 80%, var(--background-end-color) 0px, transparent 30%) !important;
+  background-repeat: no-repeat;
   overflow-y: auto;
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
 
-  @media (min-width: theme( screens.lg)) {
-    background: radial-gradient(at 30% 34%, var(--background-start-color) 0px, transparent 50%),
-      radial-gradient(at 92% 2%, theme(colors.red.50) 0px, transparent 40%),
-      radial-gradient(at 39% 47%, var(--background-end-color) 0px, transparent 50%),
-      radial-gradient(at 79% 28%, var(--background-via-color) 0px, transparent 35%),
-      radial-gradient(at 55% 80%, var(--background-end-color) 0px, transparent 50%),
-      var(--background-start-color) !important;
-  }
-}
+  @media (min-width: theme( screens.md)) {
+    & {
+      background-image: radial-gradient(
+          at 30% 34%,
+          var(--background-start-color) 0px,
+          transparent 50%
+        ),
+        radial-gradient(at 92% 2%, theme(colors.red.50) 0px, transparent 40%),
+        radial-gradient(at 39% 47%, var(--background-end-color) 0px, transparent 50%),
+        radial-gradient(at 79% 28%, var(--background-via-color) 0px, transparent 35%),
+        radial-gradient(at 55% 80%, var(--background-end-color) 0px, transparent 50%) !important;
+      animation: radial 15s cubic-bezier(0.5, 0, 0.42, 1) infinite both alternate;
+    }
 
-* {
-  line-height: 1.5em;
+    @keyframes radial {
+      from,
+      10% {
+        background-size: 110%;
+      }
+      90%,
+      to {
+        background-size: 170%;
+      }
+    }
+  }
 }
 
 @layer utilities {
@@ -63,13 +88,14 @@ i {
   display: inline-block;
   border-radius: 5%;
   padding: 0.125em 0.25em;
-  animation: blink 3s ease-out infinite alternate;
+  animation: blink 3s cubic-bezier(0, 0.78, 0, 1) infinite alternate;
   line-height: initial;
+  font-size: 0.9em;
 }
 
 @keyframes blink {
   to {
-    box-shadow: 1px 1px 10px var(--shadow-color);
+    box-shadow: 2px 2px 8px var(--shadow-color);
   }
 }
 
