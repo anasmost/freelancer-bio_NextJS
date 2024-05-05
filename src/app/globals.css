@@ -6,6 +6,7 @@
   --foreground-color: black;
   --shadow-color: #00000027;
   --background-start-color: #f4fdff;
+  --background-start-color: #edf7f9;
   --background-via-color: theme(colors.red.100);
   --background-end-color: white;
   --scrollbar-color: theme(colors.red.500);
@@ -50,6 +51,7 @@ body {
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 
   @media (min-width: theme( screens.md)) {
     & {

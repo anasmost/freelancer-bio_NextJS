@@ -1,17 +1,29 @@
 import styles from "./home.module.css";
+import Image from "next/image";
+import developerImg from "@/../public/images/developer.jpg";
 
 export default function Home() {
   return (
     // <section className="flex-1 flex flex-col gap-14">
     <section
       id="home"
-      className="uppercase text-3xl sm:text-5xl sm:flex-[1_1_80svh] flex items-center"
+      className="uppercase text-3xl sm:text-5xl sm:flex-[1_1_80svh] flex items-center justify-between gap-x-20 max-w-full"
     >
       <p
-        className={`${styles["animated-text"]} flex-1 flex flex-col gap-4 font-bold text-center sm:text-start before:border-b-red-500 dark:before:border-b-red-800`}
+        className={`${styles["animated-text"]} flex flex-col gap-4 font-bold text-center sm:text-start before:border-b-red-500 dark:before:border-b-red-800 animate-[ping_.5s_ease-in-out_1_reverse] flex-shrink-0`}
       >
         fullstack developer
       </p>
+      <Image
+        src={developerImg}
+        alt="A developer working in his office"
+        width={400}
+        height={400}
+        priority
+        placeholder="blur"
+        quality={100}
+        className={`${styles.image} flex-1 min-w-0 max-w-[400px] hidden lg:block`}
+      />
     </section>
     // <section className="grid grid-cols-2 gap-x-4 gap-y-6 auto-rows-min place-items-center min-h-[77svh]">
     //   <h2 className="col-span-2 text-center text-4xl border-b-rose-500 border-b-5">About me</h2>

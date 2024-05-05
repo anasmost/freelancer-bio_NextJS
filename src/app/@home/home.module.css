@@ -16,6 +16,110 @@
   }
 }
 
+.image {
+  border-radius: 5% 2% 5%;
+  will-change: opacity, clip-path, filter, scale;
+  animation: clip 4.5s linear 0.1s 1 forwards;
+  /* Animation start */
+  clip-path: polygon(
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%,
+    50% 50%
+  );
+  scale: 0;
+  opacity: 0;
+  filter: sepia(0.7) invert(100%);
+
+  @keyframes clip {
+    15% {
+      scale: 0.7;
+      opacity: 1;
+    }
+
+    30% {
+      scale: 0.9;
+      filter: sepia(0.35) invert(100%);
+      clip-path: polygon(
+        49% 23%,
+        53% 49%,
+        78% 41%,
+        57% 55%,
+        67% 74%,
+        49% 56%,
+        31% 75%,
+        42% 56%,
+        19% 43%,
+        45% 49%
+      );
+    }
+
+    50% {
+      scale: 0.95;
+      filter: sepia(0.35) invert(90%);
+      clip-path: polygon(
+        50% 0%,
+        64% 34%,
+        100% 35%,
+        70% 60%,
+        100% 100%,
+        49% 78%,
+        0 100%,
+        29% 60%,
+        1% 36%,
+        36% 35%
+      );
+    }
+
+    70%,
+    80% {
+      scale: 0.95;
+      filter: sepia(0.45) invert(17%);
+      clip-path: polygon(
+        50% 4%,
+        64% 34%,
+        100% 35%,
+        66% 55%,
+        93% 94%,
+        50% 70%,
+        6% 94%,
+        31% 56%,
+        1% 36%,
+        36% 35%
+      );
+    }
+
+    97% {
+      clip-path: polygon(
+        50% -300%,
+        120% -50%,
+        400% 35%,
+        150% 120%,
+        350% 380%,
+        25% 150%,
+        -250% 380%,
+        -50% 120%,
+        -300% -15%,
+        -50% -20%
+      );
+    }
+
+    to {
+      scale: 1;
+      opacity: 1;
+      filter: sepia(0.35) invert(0%) drop-shadow(1px 1px 4px #0005);
+      clip-path: none;
+      transform: none;
+    }
+  }
+}
+
 @media screen and (min-width: theme(screens.sm)) {
   @keyframes text-animation {
     from {
