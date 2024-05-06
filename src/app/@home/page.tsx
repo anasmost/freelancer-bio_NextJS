@@ -1,6 +1,7 @@
 import styles from "./home.module.css";
 import Image from "next/image";
 import developerImg from "@/../public/images/developer.jpg";
+import { screens } from "tailwindcss/defaultTheme";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         height={400}
         priority
         placeholder="blur"
-        quality={100}
+        sizes={`(min-width: ${screens.lg}) 400px, 0`}
         className={`${styles.image} flex-1 min-w-0 max-w-[400px] hidden lg:block`}
       />
     </section>

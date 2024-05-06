@@ -17,27 +17,35 @@
 }
 
 .image {
-  border-radius: 5% 2% 5%;
+  border-radius: 5% 2%;
   will-change: opacity, clip-path, filter, scale;
-  animation: clip 4.5s linear 0.1s 1 forwards;
-  /* Animation start */
-  clip-path: polygon(
-    50% 50%,
-    50% 50%,
-    50% 50%,
-    50% 50%,
-    50% 50%,
-    50% 50%,
-    50% 50%,
-    50% 50%,
-    50% 50%,
-    50% 50%
-  );
-  scale: 0;
-  opacity: 0;
-  filter: sepia(0.7) invert(100%);
+  animation: clip 4.5s linear 1 forwards;
+  /* Animation fill mode */
+  scale: 1;
+  opacity: 1;
+  filter: sepia(0.35) invert(0) blur(0) drop-shadow(1px 1px 4px #0005);
+  clip-path: none;
+  transform: none;
 
   @keyframes clip {
+    from {
+      clip-path: polygon(
+        50% 50%,
+        50% 50%,
+        50% 50%,
+        50% 50%,
+        50% 50%,
+        50% 50%,
+        50% 50%,
+        50% 50%,
+        50% 50%,
+        50% 50%
+      );
+      scale: 0;
+      opacity: 0;
+      filter: sepia(0.7) invert(100%);
+    }
+
     15% {
       scale: 0.7;
       opacity: 1;
@@ -61,7 +69,7 @@
     }
 
     50% {
-      scale: 0.95;
+      scale: 0.94;
       filter: sepia(0.35) invert(90%);
       clip-path: polygon(
         50% 0%,
@@ -79,8 +87,8 @@
 
     70%,
     80% {
-      scale: 0.95;
-      filter: sepia(0.45) invert(17%);
+      scale: 0.94;
+      filter: sepia(0.45) invert(17%) blur(3px);
       clip-path: polygon(
         50% 4%,
         64% 34%,
@@ -96,6 +104,7 @@
     }
 
     97% {
+      filter: sepia(0.38) invert(5%) blur(1px);
       clip-path: polygon(
         50% -300%,
         120% -50%,
@@ -112,10 +121,7 @@
 
     to {
       scale: 1;
-      opacity: 1;
-      filter: sepia(0.35) invert(0%) drop-shadow(1px 1px 4px #0005);
-      clip-path: none;
-      transform: none;
+      filter: sepia(0.35) invert(0) blur(0) drop-shadow(1px 1px 4px #0005);
     }
   }
 }
