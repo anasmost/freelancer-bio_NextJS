@@ -5,7 +5,7 @@
 :root {
   --foreground-color: black;
   --shadow-color: #00000027;
-  --background-start-color: #f4fdff;
+  /* --background-start-color: #f4fdff; */
   --background-start-color: #edf7f9;
   --background-via-color: theme(colors.red.100);
   --background-end-color: white;
