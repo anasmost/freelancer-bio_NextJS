@@ -4,8 +4,6 @@ import developerImg from "@/../public/images/developer.jpg";
 import { screens } from "tailwindcss/defaultTheme";
 
 export default function Home() {
-  console.dir(styles);
-
   return (
     // <section className="flex-1 flex flex-col gap-14">
     <section

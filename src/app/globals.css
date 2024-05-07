@@ -60,11 +60,11 @@ body {
           var(--background-start-color) 0px,
           transparent 50%
         ),
-        radial-gradient(at 92% 2%, theme(colors.red.50) 0px, transparent 40%),
+        radial-gradient(at 92% 2%, theme(colors.red.50) 0px, transparent 70%),
         radial-gradient(at 39% 47%, var(--background-end-color) 0px, transparent 50%),
-        radial-gradient(at 79% 28%, var(--background-via-color) 0px, transparent 35%),
+        radial-gradient(at 79% 28%, var(--background-via-color) 0px, transparent 55%),
         radial-gradient(at 55% 80%, var(--background-end-color) 0px, transparent 50%) !important;
-      animation: radial 15s cubic-bezier(0.5, 0, 0.42, 1) infinite both alternate;
+      animation: radial 20s cubic-bezier(0.5, 0, 0.42, 1) infinite both alternate;
     }
 
     @keyframes radial {
@@ -74,7 +74,7 @@ body {
       }
       90%,
       to {
-        background-size: 170%;
+        background-size: 160%;
       }
     }
   }

@@ -36,7 +36,6 @@
   border: 10px solid transparent;
   border-top-color: var(--foreground-color);
   border-block-start-color: var(--foreground-color);
-  /* mix-blend-mode: difference; */
   pointer-events: none;
   will-change: transform;
   display: flow-root;
@@ -50,19 +49,20 @@
 
   ul {
     will-change: column-gap;
-    animation: expand 16s infinite ease-in-out alternate;
+    animation: expand 16s infinite ease-out alternate;
 
-    &::before {
+    /* &::before {
       content: "";
       flex: 0 0;
       will-change: flex-grow;
       animation: expand 16s infinite ease-in-out alternate;
-    }
+    } */
   }
 
   legend {
-    will-change: margin-inline-start;
-    animation: move 10s infinite ease-in-out alternate;
+    margin: auto;
+    /* will-change: margin-inline-start; */
+    /* animation: move 10s infinite linear alternate; */
   }
 }
 
@@ -76,19 +76,19 @@
 }
 
 @media screen and (min-width: 700px) {
-  @keyframes move {
+  /* @keyframes move {
     to {
-      margin-inline-start: 35%;
+      margin-inline-start: 15%;
     }
-  }
+  } */
 
   @keyframes expand {
     from {
-      flex-grow: 0;
+      /* flex-grow: 0; */
     }
     to {
-      column-gap: 1.5rem;
-      flex-grow: 1;
+      column-gap: min(calc(12% - 8ch), 5ch);
+      /* flex-grow: 1; */
     }
   }
 

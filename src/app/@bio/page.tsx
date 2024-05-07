@@ -13,7 +13,7 @@ export default function Bio() {
       <div className={styles.container + " bg-transparent"}>
         <fieldset title="Styling Technologies" role="group">
           <legend>Styling</legend>
-          <ul className="flex gap-2 flex-wrap max-w-full min-w-fit w-[90%] lg:w-[70%]" role="list">
+          <ul className="flex gap-2 flex-wrap justify-center max-w-full min-w-fit" role="list">
             <li>
               <i>CSS</i>
             </li>
@@ -39,7 +39,7 @@ export default function Bio() {
         </fieldset>
         <fieldset title="Programming Technologies" role="group">
           <legend>Programming</legend>
-          <ul className="flex gap-2 flex-wrap max-w-full min-w-fit w-[90%] lg:w-[70%]" role="list">
+          <ul className="flex gap-2 flex-wrap justify-center max-w-full min-w-fit" role="list">
             <li>
               <i>Javascript</i>
             </li>
@@ -79,7 +79,7 @@ export default function Bio() {
           <h3
             className={
               dekko.className +
-              " tracking-widest font-extrabold capitalize text-center text-lg py-4 md:text-xl lg:text-2xl xl:text-3xl leading-loose mt-4 mb-2"
+              " tracking-widest font-extrabold capitalize text-center text-lg py-4 md:text-2xl xl:text-3xl leading-loose mt-4 mb-2"
             }
           >
             <i>Fullstack</i> consultant - <i>Javascript</i> <i>Typescript</i> Programmer

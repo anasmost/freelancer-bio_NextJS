@@ -1,5 +1,5 @@
 .common {
-  --delay: 4.5s;
+  --first-duration: 4s;
 
   .animated-text {
     @apply animate-appearance-out;
@@ -11,13 +11,15 @@
         }
         to {
           color: transparent;
+          text-shadow: -1px 1px 5px --shadow-color;
           background-size: 100%;
           animation-play-state: paused;
         }
       }
     }
 
-    animation: appearance-out 0.4s ease-out reverse, 2s ease-out var(--delay) 1 forwards mask-text;
+    animation: appearance-out 0.4s ease-out reverse,
+      2s ease-out calc(var(--first-duration) - 250ms) 1 forwards mask-text;
     background-image: repeating-linear-gradient(
       to left bottom,
       var(--foreground-color) 0 6px,
@@ -38,21 +40,20 @@
         border-bottom-style: solid;
         border-bottom-width: 5px;
         width: fit-content;
-        animation: 12s cubic-bezier(1, 0.03, 1, -0.19) calc(var(--delay) + 3s) infinite normal
-          text-animation;
+        animation: 12s linear calc(var(--first-duration) + 3s) infinite normal text-animation;
         transform-origin: left center;
         scale: 0 1;
         backdrop-filter: blur(4px);
-        color: rgb(from var(--foreground-color) r g b / 1);
+        color: var(--foreground-color);
 
         @media screen and (min-width: theme(screens.sm)) {
           @keyframes text-animation {
             from {
               content: "\00a0";
-              /* scale: 0 1; */
             }
-            6% {
+            5% {
               scale: 1;
+              content: "\00a0";
             }
             8% {
               content: "&d=X HTb+C_?";
@@ -89,13 +90,16 @@
             }
             19% {
               content: "Anas Mostafa";
+              color: var(--foreground-color);
             }
             75% {
-              color: rgb(from var(--foreground-color) r g b / 0.5);
+              color: rgb(from var(--foreground-color) r g b / 0.7);
             }
             to {
               scale: 1;
-              content: "\00a0";
+              content: "Anas Mostafa";
+              /* content: "\00a0"; */
+              color: rgb(from var(--foreground-color) r g b / 0);
             }
           }
         }
@@ -107,7 +111,7 @@
     @media screen and (min-width: theme(screens.lg)) {
       border-radius: 5% 2%;
       will-change: opacity, clip-path, filter, scale;
-      animation: clip 5s linear 1 forwards;
+      animation: clip var(--first-duration) linear 1 forwards;
       /* Idle mode */
       scale: 1;
       opacity: 1;
