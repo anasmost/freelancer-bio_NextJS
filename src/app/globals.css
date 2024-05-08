@@ -21,19 +21,61 @@
     --scrollbar-color: theme(colors.red.800);
     --scrollbar-color-track: theme(colors.neutral.950);
   }
+
+  --transition-duration: 0.35s;
+  --transition-function: ease-out;
 }
 
 * {
   line-height: 1.5em;
-  transition-property: background-color, border-color, scrollbar-color, background-image;
-  transition-duration: 0.4s;
+  ::selection {
+    background-color: darkgray;
+    color: var(--background-start-color);
+  }
+
+  &:not(html, body) {
+    transition-property: border-color, background-color, background-image, border-color,
+      text-decoration, text-shadow, outline, filter, backdrop-filter;
+    transition-duration: 0.09s, var(--transition-duration);
+    transition-timing-function: var(--transition-function);
+  }
 }
+
+/* :is(nav, header, footer, img, span:has(img), fieldset) {
+  transition-property: border-color, background-image, background-color, box-shadow, outline, filter,
+    backdrop-filter;
+  transition-duration: 0.09s, var(--transition-duration);
+  transition-timing-function: var(--transition-function);
+
+  :not(&) {
+    transition-property: background-color, background-image, border-color, text-decoration,
+      text-shadow, outline, filter, backdrop-filter;
+  }
+} */
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+em,
+legend,
+::before,
+::after {
+  transition-property: background-color, background-image, border-color, text-decoration,
+    text-shadow, outline, filter, backdrop-filter;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-function);
+} */
 
 html {
   display: contents;
   scrollbar-width: thin;
   scroll-behavior: smooth;
   scrollbar-color: var(--scrollbar-color) var(--scrollbar-color-track);
+  transition: scrollbar-color var(--transition-duration) var(--transition-function);
 }
 
 body {
@@ -52,6 +94,10 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  transition-property: background-image, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-function);
+  will-change: background-image;
 
   @media (min-width: theme( screens.md)) {
     & {

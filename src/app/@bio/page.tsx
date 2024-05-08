@@ -102,8 +102,8 @@ export default function Bio() {
               <i>MongoDB</i>.
             </p>
             <p className="mb-3 col-span-2">
-              Fortunately, I've had the opportunity to sharpen my expertise in <i>SQL</i> and
-              <i>MongoDB</i> through roles involving <i>SQL</i> reporting and complex <i>MongoDB</i>
+              Fortunately, I've had the opportunity to sharpen my expertise in <i>SQL</i> and{" "}
+              <i>MongoDB</i> through roles involving <i>SQL</i> reporting and complex <i>MongoDB</i>{" "}
               queries for large scale apps.
             </p>
             <p className="mb-3">
