@@ -2,104 +2,124 @@
   --first-duration: 4s;
 
   .animated-text {
-    @apply animate-appearance-out;
-
     @media (min-width: theme(screens.lg)) {
       @keyframes mask-text {
         from {
           background-size: 0%;
+          background-color: var(--foreground-color);
+          scale: 0;
+          opacity: 0;
+          transform: translateX(1000px);
+        }
+        15% {
+          scale: 1;
+          opacity: 1;
+          transform: translateX(0);
+        }
+        25% {
+          background-size: 0%;
         }
         to {
-          color: transparent;
-          text-shadow: -1px 1px 5px --shadow-color;
-          background-size: 100%;
+          opacity: 1;
           animation-play-state: paused;
         }
       }
     }
 
-    animation: appearance-out 0.4s ease-out reverse,
-      2s ease-out calc(var(--first-duration) - 250ms) 1 forwards mask-text;
+    animation: 6s ease-in calc(var(--first-duration) / 2) 1 forwards mask-text;
+    opacity: 0;
     background-image: repeating-linear-gradient(
       to left bottom,
       var(--foreground-color) 0 6px,
       var(--scrollbar-color) 8px 22px,
       var(--background-end-color) 22px 25px
     );
+    color: transparent;
+    text-shadow: 2px 2px 4px rgb(from var(--foreground-color) r g b / 0.05),
+      -1px -1px 2px rgb(from var(--foreground-color) r g b / 0.05);
     background-origin: content-box;
     background-position: top right;
-    background-size: cover;
+    background-size: 100%;
     background-clip: text;
+    line-height: 1.1em;
 
     @media screen and (min-width: theme(screens.sm)) {
       &::before {
-        content: "";
+        content: "\00a0";
         text-transform: inherit;
-        display: inline-block;
-        line-height: 1.1em;
         border-bottom-style: solid;
         border-bottom-width: 5px;
-        width: fit-content;
+        inline-size: fit-content;
+        block-size: 0;
+        scale: 0 1;
         animation: 12s cubic-bezier(0.88, -0.02, 0.12, 0.3) calc(var(--first-duration) + 2.5s)
           infinite normal text-animation;
         transform-origin: left center;
-        scale: 0 1;
-        backdrop-filter: blur(4px);
-        color: var(--foreground-color);
+        color: rgb(from var(--foreground-color) r g b / 1);
+        text-shadow: none;
 
         @media screen and (min-width: theme(screens.sm)) {
           @keyframes text-animation {
-            from {
-              content: "\00a0";
-            }
-            5% {
-              scale: 1;
-              content: "\00a0";
+            4% {
+              block-size: calc(1lh + 5px);
+              scale: 0 1;
             }
             8% {
-              content: "&d=X HTb+C_?";
-            }
-            9% {
-              content: "cnMr GY=$4gJ";
+              content: "\00a0";
+              scale: 1;
             }
             10% {
-              content: "ajdy _VuD5_}";
+              content: "&d=X HTb+C_?";
             }
             11% {
-              content: "an$# Pama9Vd";
+              content: "cnMr GY=$4gJ";
             }
             12% {
-              content: "an$# m^do@z!";
+              content: "ajdy _VuD5_}";
             }
             13% {
-              content: "an!: mo]YREx";
+              content: "an$# Pama9Vd";
             }
             14% {
-              content: "An?$ mo^t@!@";
+              content: "an$# m^do@z!";
             }
             15% {
-              content: "Ana! mos&$Fm";
+              content: "an!: mo]YREx";
             }
             16% {
-              content: "Ana$ most@!2";
+              content: "An?$ mo^t@!@";
             }
             17% {
-              content: "Anas mosta!@";
+              content: "Ana! mos&$Fm";
             }
             18% {
-              content: "Anas mostaf@";
+              content: "Ana$ most@!2";
             }
             19% {
+              content: "Anas mosta!@";
+            }
+            20% {
+              content: "Anas mostaf@";
+            }
+            21% {
               content: "Anas Mostafa";
-              color: var(--foreground-color);
+              color: rgb(from var(--foreground-color) r g b / 1);
             }
-            75% {
-              color: rgb(from var(--foreground-color) r g b / 0.7);
+            80% {
+              color: rgb(from var(--foreground-color) r g b / 0.5);
+              opacity: 1;
             }
-            to {
+            85% {
+              block-size: calc(1lh + 5px);
               scale: 1;
+              color: transparent;
+            }
+            92%,
+            to {
+              scale: 0;
+              color: transparent;
               content: "Anas Mostafa";
-              color: rgb(from var(--foreground-color) r g b / 0);
+              block-size: 0;
             }
           }
         }
@@ -115,7 +135,7 @@
       /* Idle mode */
       scale: 1;
       opacity: 1;
-      filter: sepia(0.35) invert(0) blur(0) drop-shadow(1px 1px 4px #0005);
+      filter: sepia(0.35) invert(0) blur(0) drop-shadow(1px 1px 2px #0003);
       clip-path: none;
       transform: none;
 
@@ -138,12 +158,12 @@
           filter: sepia(0.7) hue-rotate(180deg);
         }
 
-        15% {
+        10% {
           scale: 0.7;
           opacity: 1;
         }
 
-        30% {
+        20% {
           scale: 0.9;
           filter: sepia(0.35) hue-rotate(180deg);
           clip-path: polygon(
@@ -160,7 +180,7 @@
           );
         }
 
-        50% {
+        35% {
           scale: 0.96;
           filter: sepia(0.35) hue-rotate(180deg);
           clip-path: polygon(
@@ -180,7 +200,7 @@
         70%,
         80% {
           scale: 0.96;
-          filter: sepia(0.45) hue-rotate(0) blur(3px);
+          filter: sepia(0.45) hue-rotate(0) blur(2px);
           clip-path: polygon(
             50% 4%,
             64% 34%,
@@ -195,7 +215,22 @@
           );
         }
 
-        97% {
+        85% {
+          clip-path: polygon(
+            50% 0%,
+            80% 10%,
+            100% 35%,
+            100% 70%,
+            80% 90%,
+            50% 100%,
+            20% 90%,
+            0% 70%,
+            0% 35%,
+            20% 10%
+          );
+        }
+
+        95% {
           clip-path: polygon(
             50% -300%,
             120% -50%,
@@ -212,7 +247,8 @@
 
         to {
           scale: 1;
-          filter: sepia(0.35) hue-rotate(0) blur(0) drop-shadow(1px 1px 4px #0005);
+          filter: sepia(0.35) hue-rotate(0) blur(0) drop-shadow(1px 1px 2px #0003);
+          clip-path: none;
         }
       }
     }

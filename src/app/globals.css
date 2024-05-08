@@ -35,7 +35,7 @@
 
   &:not(html, body) {
     transition-property: border-color, background-color, background-image, border-color,
-      text-decoration, text-shadow, outline, filter, backdrop-filter;
+      text-decoration, box-shadow, text-shadow, outline, filter, backdrop-filter;
     transition-duration: 0.09s, var(--transition-duration);
     transition-timing-function: var(--transition-function);
   }
@@ -94,8 +94,8 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  transition-property: background-image, background-color;
-  transition-duration: var(--transition-duration);
+  transition-property: background-image var(--transition-duration),
+    background-color var(--transition-duration);
   transition-timing-function: var(--transition-function);
   will-change: background-image;
 
