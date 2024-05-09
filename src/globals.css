@@ -18,7 +18,7 @@
     --background-start-color: black;
     --background-via-color: theme(colors.red.950);
     --background-end-color: #3d3a3a;
-    --scrollbar-color: theme(colors.red.800);
+    --scrollbar-color: theme(colors.red.700);
     --scrollbar-color-track: theme(colors.neutral.950);
   }
 

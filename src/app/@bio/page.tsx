@@ -1,4 +1,4 @@
-import { dekko } from "../fonts";
+import { dekko } from "../../fonts";
 import styles from "./bio.module.css";
 
 export default function Bio() {
@@ -7,7 +7,7 @@ export default function Bio() {
       id="bio"
       className="sm:flex-[1_1_80svh] flex flex-col gap-4 items-center sm:py-16 md:px-8 md:shadow-small md:dark:shadow-large backdrop-blur-xl"
     >
-      <h2 className="text-center uppercase text-3xl sm:text-4xl border-b-red-500 dark:border-b-red-800 border-b-5">
+      <h2 className="text-center uppercase text-3xl sm:text-4xl border-b-red-500 dark:border-b-red-700 border-b-5">
         Bio
       </h2>
       <div className={styles.container + " bg-transparent"}>

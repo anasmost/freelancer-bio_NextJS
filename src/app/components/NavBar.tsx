@@ -1,6 +1,6 @@
 "use client";
 
-import { zeyada } from "@/app/fonts";
+import { handwriting } from "@/fonts";
 import {
   Navbar,
   NavbarBrand,
@@ -27,9 +27,9 @@ export default function NavBar() {
       disableAnimation
       shouldHideOnScroll
     >
-      <NavbarBrand className={zeyada.className}>
+      <NavbarBrand className={handwriting.className}>
         <AppLink href="/" className="gap-4">
-          <p className="font-bold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 dark:from-red-950 to-[var(--foreground-color)] dark:via-[var(--foreground-color)] dark:via-30% dark:to-red-900 dark:to-90%">
+          <p className="capitalize leading-10 tracking-widest text-3xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 dark:from-red-800 to-[var(--foreground-color)] dark:via-[var(--foreground-color)] dark:via-30% dark:to-red-300 dark:to-90%">
             Anas El Mostafa
           </p>
         </AppLink>

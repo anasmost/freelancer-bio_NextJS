@@ -1,12 +1,12 @@
 import React from "react";
-import "./globals.css";
-import * as fonts from "./fonts";
+import "@/globals.css";
+import * as fonts from "../fonts";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
-import { GlobalProviders, HashProvider } from "./providers";
+import { GlobalProviders, HashProvider } from "../providers";
 
-export { initialMetadata as metadata } from "./metadata";
+export { initialMetadata as metadata } from "../metadata";
 
 export const revalidate: number | false = Math.ceil(
   new Date(1 + new Date().getFullYear(), 0).valueOf() / 1000 - Date.now() / 1000

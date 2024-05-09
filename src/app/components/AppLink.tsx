@@ -2,7 +2,7 @@
 
 import { Link as UILink, type LinkProps } from "@nextui-org/link";
 import Link, { type LinkProps as NLinkProps } from "next/link";
-import { useHash } from "@/app/providers";
+import { useHash } from "@/providers";
 
 export default function AppLink({
   href,
@@ -22,7 +22,7 @@ export default function AppLink({
       className={
         "uppercase " +
         (matches?.includes(hash) || hash === href
-          ? "text-red-500 dark:text-red-800 scale-105"
+          ? "text-red-500 dark:text-red-700 scale-105"
           : "text-[var(--foreground-color)]") +
         (className ? " " + className : "")
       }

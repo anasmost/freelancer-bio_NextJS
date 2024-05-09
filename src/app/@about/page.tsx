@@ -4,14 +4,14 @@ export default function About() {
       id="about"
       className="flex-grow flex flex-col gap-4 items-center justify-center text-center sm:flex-[1_1_80svh] md:px-8 md:shadow-small md:dark:shadow-large backdrop-blur-xl"
     >
-      <h2 className="text-center uppercase text-3xl sm:text-4xl border-b-red-500 dark:border-b-red-800 border-b-5">
+      <h2 className="text-center uppercase text-3xl sm:text-4xl border-b-red-500 dark:border-b-red-700 border-b-5">
         About
       </h2>
       <p className="text-xl sm:text-2xl md:text-3xl">
         Please reach out to me, for content ideas or business matters @<br />
         <a
           href="mailto:anasel.consultant@gmail.com"
-          className="text-[0.8em]  bg-clip-text text-transparent bg-gradient-to-r from-red-800 via-red-500 via-50% to-red-800 dark:from-red-900 dark:to-red-900 dark:via-65% dark:via-red-100 underline decoration-foreground-200 dark:decoration-foreground-300"
+          className="text-[0.8em]  bg-clip-text text-transparent bg-gradient-to-r from-red-800 via-red-500 via-50% to-red-800 dark:from-red-800 dark:to-red-800 dark:via-65% dark:via-red-100 underline decoration-foreground-200 dark:decoration-foreground-300"
         >
           anasel.consultant@gmail.com
         </a>

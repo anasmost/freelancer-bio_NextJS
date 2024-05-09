@@ -11,7 +11,7 @@ export default function Home() {
       className={`${styles.common} uppercase text-3xl sm:text-5xl sm:flex-[1_1_80svh] flex items-center justify-around gap-x-20 max-w-full`}
     >
       <p
-        className={`${styles["animated-text"]} flex flex-col  gap-4 font-bold text-center sm:text-start before:border-b-red-500 dark:before:border-b-red-800 flex-shrink-0`}
+        className={`${styles["animated-text"]} flex flex-col gap-4 font-bold text-center sm:text-start before:border-b-red-500 dark:before:border-b-red-700 flex-shrink-0`}
       >
         fullstack developer
       </p>

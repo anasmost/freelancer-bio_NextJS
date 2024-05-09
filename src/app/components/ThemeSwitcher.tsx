@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { Switch } from "@nextui-org/switch";
-import { MoonIcon, SunIcon } from "@/app/icons";
+import { MoonIcon, SunIcon } from "@/icons";
 
 import styles from "./ThemeSwitcher.module.css";
 import { useEffect, useState } from "react";
