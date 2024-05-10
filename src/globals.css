@@ -81,6 +81,7 @@ html {
 body {
   /* contain: content; */
   min-height: 100svh;
+  max-width: 100svw;
   color: var(--foreground-color);
   background-color: var(--background-start-color) !important;
   background-image: radial-gradient(at 30% 34%, var(--background-start-color) 0px, transparent 50%),
@@ -93,7 +94,7 @@ body {
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   transition-property: background-image var(--transition-duration),
     background-color var(--transition-duration);
   transition-timing-function: var(--transition-function);

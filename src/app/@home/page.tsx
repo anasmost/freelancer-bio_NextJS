@@ -8,22 +8,21 @@ export default function Home() {
     // <section className="flex-1 flex flex-col gap-14">
     <section
       id="home"
-      className={`${styles.common} uppercase text-3xl sm:text-5xl sm:flex-[1_1_80svh] flex items-center justify-around gap-x-20 max-w-full`}
+      className={`${styles.common} uppercase text-3xl sm:text-5xl 2xl:text-6xl sm:flex-[1_1_80svh] flex items-center lg:items-start 2xl:items-center justify-center lg:justify-start gap-x-20 max-w-full relative`}
     >
       <p
-        className={`${styles["animated-text"]} flex flex-col gap-4 font-bold text-center sm:text-start before:border-b-red-500 dark:before:border-b-red-700 flex-shrink-0`}
+        className={`${styles["home-title"]} flex flex-col font-bold text-center sm:text-start before:border-b-red-500 dark:before:border-b-red-700 flex-shrink-0 p-10 rounded-full z-10 mt-2`}
       >
         fullstack developer
       </p>
       <Image
         src={developerImg}
         alt="A developer working in his office"
-        width={400}
-        height={400}
+        fill
         priority
         placeholder="blur"
-        sizes={`(min-width: ${screens.lg}) 400px, 0`}
-        className={`${styles.image} flex-1 min-w-0 max-w-[400px] hidden lg:block`}
+        sizes={`(max-width: ${screens.md}) 0, (max-width: ${screens.lg}) ${screens.md}, (min-width: ${screens.lg}) ${screens.lg}`}
+        className={`${styles.image} flex-1 min-w-0 max-w-4xl hidden md:block justify-self-center object-cover`}
       />
     </section>
     // <section className="grid grid-cols-2 gap-x-4 gap-y-6 auto-rows-min place-items-center min-h-[77svh]">
