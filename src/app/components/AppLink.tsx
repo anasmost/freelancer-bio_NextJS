@@ -8,6 +8,7 @@ export default function AppLink({
   href,
   className,
   matches,
+  onClick,
   ...props
 }: Partial<LinkProps & NLinkProps & { matches: string[] }>) {
   const hash = useHash();
@@ -21,19 +22,20 @@ export default function AppLink({
       color="foreground"
       className={
         "uppercase " +
-        (matches?.includes(hash) || hash === href
+        (matches?.includes(hash) || href === hash
           ? "text-red-500 dark:text-red-700 scale-105"
           : "text-[var(--foreground-color)]") +
         (className ? " " + className : "")
       }
-      onClick={() =>
+      onClick={(e) => {
         dispatchEvent(
           new HashChangeEvent("hashchange", {
             oldURL: hash,
             newURL: href,
           })
-        )
-      }
+        );
+        onClick?.(e);
+      }}
       {...props}
     />
   );
