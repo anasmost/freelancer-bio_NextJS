@@ -87,7 +87,7 @@
       /* flex-grow: 0; */
     }
     to {
-      column-gap: min(calc(12% - 8ch), 5ch);
+      column-gap: min(calc(12% - 8ch), 3.5ch);
       /* flex-grow: 1; */
     }
   }
