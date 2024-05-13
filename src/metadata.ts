@@ -35,8 +35,13 @@ export const initialMetadata: Metadata = {
         sizes: "192x192",
       },
       {
+        url: "/icons/android-chrome-192x192.png",
+        sizes: "100x100",
+      },
+      {
         url: "/icons/apple-touch-icon.png",
-        rel: "mask-icon",
+        rel: "apple-touch-icon",
+        sizes: "192x192",
       },
       {
         url: "/icons/favicon-32x32.png",
@@ -70,6 +75,11 @@ export const initialMetadata: Metadata = {
         url: "/icons/android-chrome-192x192.png",
         height: 192,
         width: 192,
+      },
+      {
+        url: "/icons/android-chrome-192x192.png",
+        height: 100,
+        width: 100,
       },
       {
         url: "/icons/apple-touch-icon.png",
