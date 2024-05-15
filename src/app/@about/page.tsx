@@ -3,6 +3,7 @@ export default function About() {
     <section
       id="about"
       className="flex-grow flex flex-col gap-4 items-center justify-center text-center sm:flex-[1_1_80svh] md:px-8 md:shadow-small md:dark:shadow-large backdrop-blur-xl"
+      aria-description="About this web page"
     >
       <h2 className="text-center uppercase text-3xl sm:text-4xl border-b-red-500 dark:border-b-red-700 border-b-5">
         About

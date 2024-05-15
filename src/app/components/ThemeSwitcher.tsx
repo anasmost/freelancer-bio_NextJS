@@ -20,6 +20,7 @@ export function ThemeSwitcher() {
 
   return (
     <Switch
+      aria-roledescription="Theme switcher between dark and light modes"
       isSelected={resolvedTheme === "dark"}
       size={size}
       thumbIcon={({ isSelected, className }) =>

@@ -9,6 +9,7 @@ export default function Home() {
     <section
       id="home"
       className={`${styles.common} uppercase text-3xl sm:text-5xl 2xl:text-6xl sm:flex-[1_1_80svh] flex items-center justify-center lg:justify-start gap-x-20 max-w-full relative`}
+      aria-description="Welcome, just a small animated title"
     >
       <p
         className={`${styles["home-title"]} flex flex-col font-bold text-center sm:text-start flex-shrink-0 p-10 rounded-full z-10 mt-2 before:border-b-red-500 dark:before:border-b-red-700`}
