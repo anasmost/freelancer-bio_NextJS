@@ -16,14 +16,15 @@
           background-color: var(--foreground-color);
           scale: 0;
           opacity: 0;
-          transform: translateX(1500px);
+        }
+        12% {
+          scale: 0.4;
         }
         15% {
           backdrop-filter: blur(0);
           background-size: 0%;
           scale: 1;
           opacity: 1;
-          transform: translateX(0);
         }
         to {
           background-size: 100%;
@@ -49,6 +50,7 @@
       background-origin: content-box;
       background-position: top right;
       background-clip: text;
+      transform-origin: 80% center;
     }
 
     line-height: 1.1em;
