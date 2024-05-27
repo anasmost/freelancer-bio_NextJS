@@ -12,7 +12,7 @@ export default function Home() {
       aria-description="Welcome, just a small animated title"
     >
       <p
-        className={`${styles["home-title"]} flex flex-col font-bold text-center sm:text-start flex-shrink-0 p-10 rounded-full z-10 mt-2 before:border-b-red-500 dark:before:border-b-red-700`}
+        className={`${styles["home-title"]} flex flex-col font-bold text-center sm:text-start flex-shrink-0 p-10 rounded-full z-10 mt-2 before:border-b-red-500 dark:before:border-b-red-700 w-fit`}
       >
         fullstack developer
       </p>
