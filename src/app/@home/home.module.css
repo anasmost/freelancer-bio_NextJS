@@ -34,7 +34,22 @@
         }
       }
 
-      animation: 6s ease-in calc(var(--first-duration) - 1.65s) 1 forwards mask-animation;
+      @keyframes translate {
+        from,
+        50% {
+          translate: 0;
+        }
+        80% {
+          translate: 0 120%;
+        }
+        to {
+          translate: 0 80%;
+        }
+      }
+
+      animation: 6s ease-in calc(var(--first-duration) - 1.65s) 1 forwards mask-animation,
+        translate 1ms alternate both;
+      animation-timeline: auto, view(block -10em);
       opacity: 0;
       background-image: repeating-linear-gradient(
         to left bottom,
@@ -147,7 +162,8 @@
     @screen md {
       border-radius: 5vmin 2vmin;
       will-change: opacity, clip-path, filter, scale;
-      animation: clip-animation var(--first-duration) linear 1 none;
+      animation: clip-animation var(--first-duration) linear 1 none, fade 1ms alternate both;
+      animation-timeline: auto, view(block 0 30%);
       /* Idle mode */
       scale: 1;
       opacity: 1;
@@ -224,6 +240,18 @@
           scale: 1;
           filter: sepia(0.35) hue-rotate(0) drop-shadow(1px 1px 2px #0003);
           clip-path: none;
+        }
+      }
+
+      @keyframes fade {
+        from,
+        50% {
+          opacity: 1;
+          scale: 1;
+        }
+        to {
+          opacity: 0;
+          scale: 0.5;
         }
       }
     }
