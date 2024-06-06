@@ -76,6 +76,13 @@ html {
   scroll-behavior: smooth;
   scrollbar-color: var(--scrollbar-color) var(--scrollbar-color-track);
   transition: scrollbar-color var(--transition-duration) var(--transition-function);
+  cursor: url("assets/cursor.png"), default !important;
+}
+
+a:is(:hover, :active),
+[data-hover],
+[data-hover] * {
+  cursor: url("assets/cursor-pointer.png"), pointer !important;
 }
 
 body {

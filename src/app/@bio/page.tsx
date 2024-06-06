@@ -36,6 +36,9 @@ export default function Bio() {
             <li>
               <i>Prime React</i>
             </li>
+            <li>
+              <i>WordPress CMS</i>
+            </li>
           </ul>
         </fieldset>
         <fieldset title="Programming Technologies" role="group">

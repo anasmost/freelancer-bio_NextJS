@@ -13,7 +13,6 @@
   h3 {
     animation: movingbar 25s cubic-bezier(0, 1.45, 1, -0.45) infinite both normal;
     letter-spacing: 0.125rem;
-    cursor: default;
   }
 
   p {
@@ -43,7 +42,6 @@
   legend,
   ul {
     padding: 0 10px;
-    cursor: default;
     pointer-events: all;
   }
 
