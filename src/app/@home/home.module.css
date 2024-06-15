@@ -197,11 +197,15 @@
           filter: sepia(0.35) hue-rotate(180deg);
         }
 
+        75% {
+          filter: sepia(0.35) hue-rotate(60deg) brightness(1);
+        }
+        82% {
+          filter: sepia(0.35) hue-rotate(60deg) brightness(1.3);
+        }
         75%,
         88% {
           scale: 0.95;
-          filter: sepia(0.35) hue-rotate(60deg);
-
           clip-path: polygon(
             21% 19%,
             25% 36%,
@@ -216,6 +220,9 @@
             69% 19%,
             51% 11%
           );
+        }
+        88% {
+          filter: sepia(0.35) hue-rotate(60deg) brightness(1.1);
         }
 
         95% {
@@ -233,6 +240,7 @@
             31% 0,
             100% 0
           );
+          filter: sepia(0.35) hue-rotate(60deg) brightness(1);
         }
 
         to {
