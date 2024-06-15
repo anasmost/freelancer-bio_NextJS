@@ -20,10 +20,11 @@ export default function About() {
       <aside className="text-medium sm:text-lg md:text-xl opacity-65">
         <p>Development slowly in progress...</p>
         <p>
-          Built with <i>Next.js</i>{" "}
+          Built with <i>Next.js</i>
+          {/* {" "}
           <span className="text-medium">
             (<i>ReactJS</i>)
-          </span>
+          </span> */}
         </p>
       </aside>
     </section>
