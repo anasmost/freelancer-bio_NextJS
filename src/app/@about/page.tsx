@@ -9,22 +9,27 @@ export default function About() {
         About
       </h2>
       <p className="text-xl sm:text-2xl md:text-3xl">
-        Please reach out to me, for content ideas or business matters @<br />
+        Please reach out to me for <i>Tech</i> matters @
+        <br />
         <a
           href="mailto:anasel.consultant@gmail.com"
-          className="text-[0.8em]  bg-clip-text text-transparent bg-gradient-to-r from-red-800 via-red-500 via-50% to-red-800 dark:from-red-800 dark:to-red-800 dark:via-65% dark:via-red-100 underline decoration-foreground-200 dark:decoration-foreground-300"
+          className="text-[0.8em] bg-clip-text text-transparent bg-gradient-to-r from-red-800 via-red-500 via-50% to-red-800 dark:from-red-800 dark:to-red-800 dark:via-65% dark:via-red-100 underline decoration-foreground-200 dark:decoration-foreground-300"
         >
           anasel.consultant@gmail.com
         </a>
       </p>
       <aside className="text-medium sm:text-lg md:text-xl opacity-65">
-        <p>Development slowly in progress...</p>
+        <del className="decoration-red-100 dark:decoration-red-950">
+          <p>Development slowly in progress...</p>
+        </del>
+        <ins className="decoration-red-500">
+          <p>
+            Started just to be abandoned... <br />
+            <small>for an upcoming elegant startup professional website</small>
+          </p>
+        </ins>
         <p>
           Built with <i>Next.js</i>
-          {/* {" "}
-          <span className="text-medium">
-            (<i>ReactJS</i>)
-          </span> */}
         </p>
       </aside>
     </section>
