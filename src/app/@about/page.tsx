@@ -25,7 +25,7 @@ export default function About() {
         <ins className="decoration-red-500">
           <p>
             Started just to be abandoned... <br />
-            <small>for an upcoming elegant startup professional website</small>
+            <small>for an upcoming elegant professional website</small>
           </p>
         </ins>
         <p>
