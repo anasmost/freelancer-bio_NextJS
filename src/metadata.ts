@@ -4,25 +4,43 @@ export const initialMetadata: Metadata = {
   metadataBase: new URL("https://anasmost-bio.vercel.app/"),
   title: "Anas Mostafa | Fullstack",
   description:
-    "Web Profile of Anas Mostafa, a web technical consultant. As a web developer, I consider this website being in gradual development with Next.js, as a starting point to establish my web presence.",
+    "Web Profile of Anas Mostafa, a web technical consultant. I offer fullstack web development services. This web page is a small bridge to you, before venturing into a web agency.",
   authors: {
     name: "Anas El Mostafa",
     url: "https://anasmost-bio.vercel.app/",
   },
   keywords: [
     "Next.js",
+    "Next",
     "React",
+    "React.js",
     "JavaScript",
     "TypeScript",
     "Anas El Mostafa",
+    "Anas Mostafa",
     "Node.js",
+    "Node",
     "SQL",
     "web",
     "development",
     "developer",
+    "développeur",
+    "developpeur",
+    "développement",
+    "developpement",
     "consultant",
+    "technique",
     "css",
     "tailwind",
+    "frontend",
+    "backend",
+    "fullstack",
+    "website",
+    "site web",
+    "Casablanca",
+    "Rabat",
+    "Morocco",
+    "Maroc",
   ],
   icons: {
     icon: [
@@ -63,7 +81,7 @@ export const initialMetadata: Metadata = {
     type: "website",
     title: "Anas Mostafa | Fullstack",
     description:
-      "Web Profile of Anas Mostafa, a web technical consultant. As a web developer, I consider this website being in gradual development with Next.js, as a starting point to establish my web presence.",
+      "Web Profile of Anas Mostafa, a web technical consultant. I offer fullstack web development services. This web page is a small bridge to you, before venturing into a web agency.",
     emails: "anasel.consultant@gmail.com",
     images: [
       {
