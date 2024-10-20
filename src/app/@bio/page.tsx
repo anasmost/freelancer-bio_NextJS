@@ -44,11 +44,15 @@ export default function Bio() {
         <fieldset title="Programming Technologies" role="group">
           <legend>Programming</legend>
           <ul className="flex gap-2 flex-wrap justify-center max-w-full min-w-fit" role="list">
+            <li>Java</li>
             <li>
               <i>Javascript</i>
             </li>
             <li>
               <i>Typescript</i>
+            </li>
+            <li>
+              <i>Spring-Boot</i>
             </li>
             <li>
               <i>NodeJS</i>
@@ -59,9 +63,9 @@ export default function Bio() {
             <li>
               <i>NextJS</i>
             </li>
-            <li>
+            {/* <li>
               <i>NestJS</i>
-            </li>
+            </li> */}
             {/* <li>
               <i>Java</i>
             </li>
@@ -86,17 +90,20 @@ export default function Bio() {
               " tracking-widest font-extrabold capitalize text-center text-lg py-4 md:text-2xl xl:text-3xl leading-loose mt-4 mb-2"
             }
           >
-            <i>Fullstack</i> consultant - <i>Javascript</i> <i>Typescript</i> Programmer
+            <i>Fullstack</i> consultant - <i>Java</i> <i>Javascript</i> <i>Typescript</i> Programmer
           </h3>
           <div className="lg:columns-2 lg:gap-x-10 text-balance text-justify">
             <p className="mt-0 mb-3">
               Integrating academic knowledge with additional sought for and self-taught concepts and
               techniques, I came out a Fullstack Engineer having specialized at first in the{" "}
-              <i>Javascript</i> <i>Typescript</i> programming stack consisting of <i>NodeJS</i> &{" "}
-              <i>ReactJS</i>, while having gradually added multiple libraries and frameworks to my
-              Arsenal due to either role assignments or to performance and security pressures which
-              lead to web docs, including <i>ExpressJS</i> <i>PassportJS</i> <i>AuthJS</i>{" "}
-              <i>NextJS</i> & <i>NestJS</i>, among others.
+              <i>Java</i>
+              <i>Javascript</i> <i>Typescript</i> programming environments consisting of{" "}
+              <i>Spring Boot</i>, <i>NodeJS</i> and <i>ReactJS</i>, while having gradually
+              experimented with multiple libraries and frameworks due to either curiosity, role
+              assignments or to performance and security pressures which lead to benchmarks then web
+              docs and new concepts, including <i>Spring Security</i> <i>Spring Data REST</i>{" "}
+              <i>Spring Web Flux</i> <i>ExpressJS</i> <i>PassportJS</i> <i>AuthJS</i> <i>NextJS</i>{" "}
+              & <i>NestJS</i>, among less known others.
             </p>
             <p className="mb-3">
               This being said, it implies my familiarity with the majority of the expected browser
@@ -106,7 +113,7 @@ export default function Bio() {
               <i>MongoDB</i>.
             </p>
             <p className="mb-3 col-span-2">
-              Fortunately, I've had the opportunity to sharpen my expertise in <i>SQL</i> and{" "}
+              Indeed, I've had the opportunity to sharpen my expertise in <i>SQL</i> and{" "}
               <i>MongoDB</i> through roles involving <i>SQL</i> reporting and complex <i>MongoDB</i>{" "}
               queries for large scale apps.
             </p>
