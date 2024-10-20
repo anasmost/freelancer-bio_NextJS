@@ -5,9 +5,9 @@
   }
 
   .home-title {
-    --blur: blur(theme(backdropBlur.2xl));
-    &:where(:global(.dark) *) {
-      --blur: blur(theme(backdropBlur.3xl));
+    --blur: blur(theme(backdropBlur.sm));
+    &:where(:global(.dark) &) {
+      --blur: blur(theme(backdropBlur.md));
     }
     @screen md {
       @keyframes mask-animation {
@@ -16,16 +16,22 @@
           background-color: var(--foreground-color);
           scale: 0;
           opacity: 0;
-          box-shadow: 2px 2px 2px #0002;
         }
         12% {
           scale: 0.4;
+          box-shadow: none;
         }
         15% {
           backdrop-filter: blur(0);
           background-size: 0%;
           scale: 1;
           opacity: 1;
+        }
+        20% {
+          box-shadow: 1px 1px 1px #0003;
+        }
+        70% {
+          box-shadow: 4px 4px 5px #0005;
         }
         to {
           background-size: 100%;
