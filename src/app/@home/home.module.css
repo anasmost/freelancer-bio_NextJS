@@ -202,6 +202,9 @@
         20% {
           filter: sepia(0.35) hue-rotate(180deg) drop-shadow(2px 2px 5px #2229);
         }
+        50% {
+          filter: sepia(0.35) hue-rotate(90deg) drop-shadow(2px 2px 5px #2229);
+        }
 
         75% {
           filter: sepia(0.35) hue-rotate(60deg) brightness(1) drop-shadow(2px 2px 4px #1117);
