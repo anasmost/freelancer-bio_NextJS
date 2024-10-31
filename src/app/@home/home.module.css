@@ -4,6 +4,11 @@
     --first-duration: 3.5s;
   }
 
+  ::selection {
+    background-color: rgb(from var(--scrollbar-color) r g b / 0.4);
+    color: rgb(from var(--foreground-color) r g b / 0.5);
+  }
+
   .home-title {
     --blur: blur(theme(backdropBlur.sm));
     &:where(:global(.dark) &) {
