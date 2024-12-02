@@ -31,6 +31,19 @@ export default function About() {
         <p>
           Built with <i>Next.js</i>
         </p>
+        <p>
+          <a
+            href="https://anasmostafa.netlify.app/"
+            className="animate-[bounce-arrow_1s_ease-out_infinite_alternate] inline-block text-cyan-500"
+            target="_blank"
+          >
+            <br />
+            Temporary replacement{" "}
+            <span className="animate-[bounce-arrow_1s_ease-out_infinite_alternate] inline-block">
+              &#8594;
+            </span>
+          </a>
+        </p>
       </aside>
     </section>
   );

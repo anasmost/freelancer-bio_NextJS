@@ -25,6 +25,28 @@ export default function Home() {
         sizes={`(max-width: ${screens.md}) 0, (max-width: ${screens.lg}) ${screens.md}, (min-width: ${screens.lg}) ${screens.lg}`}
         className={`${styles.image} flex-1 min-w-0 max-w-4xl hidden md:block justify-self-center object-cover object-center`}
       />
+      <p className="z-10 px-10 py-3 mt-4 ml-auto self-start rounded-lg backdrop-blur-md backdrop-opacity-50 border border-red-400 animate-[appearance-in_1s_4s_normal_backwards]">
+        <a
+          href="https://anasmostafa.netlify.app/"
+          target="_blank"
+          className="text-xl flex items-center cursor-pointer group animate-[bounce-arrow_1s_4s_ease-out_infinite_alternate,appearance-in_1s_4s_normal_backwards] text-yellow-600"
+        >
+          <span>New page</span>
+          <svg
+            className="w-10 h-10 md:w-12 md:h-12  animate-[bounce-arrow_1s_4s_ease-out_infinite_alternate] transition-transform duration-200 ease-out group-hover:translate-x-1"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+            />
+          </svg>
+        </a>
+      </p>
     </section>
     // <section className="grid grid-cols-2 gap-x-4 gap-y-6 auto-rows-min place-items-center min-h-[77svh]">
     //   <h2 className="col-span-2 text-center text-4xl border-b-rose-500 border-b-5">About me</h2>

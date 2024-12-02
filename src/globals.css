@@ -171,3 +171,14 @@ body > [data-overlay-container] {
     border-color: var(--foreground-color) !important;
   }
 }
+
+@keyframes bounce-arrow {
+  from {
+    transform: translate(0, 0);
+    filter: hue-rotate(0);
+  }
+  to {
+    transform: translate(8px, -2px);
+    filter: hue-rotate(180deg);
+  }
+}
