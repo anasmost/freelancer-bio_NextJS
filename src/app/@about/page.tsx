@@ -12,10 +12,10 @@ export default function About() {
         Please reach out to me for <i>Tech</i> matters @
         <br />
         <a
-          href="mailto:anasel.consultant@gmail.com"
+          href="mailto:anas.elmost@gmail.com"
           className="text-[0.8em] bg-clip-text text-transparent bg-gradient-to-r from-red-800 via-red-500 via-50% to-red-800 dark:from-red-800 dark:to-red-800 dark:via-65% dark:via-red-100 underline decoration-foreground-200 dark:decoration-foreground-300"
         >
-          anasel.consultant@gmail.com
+          anas.elmost@gmail.com
         </a>
       </p>
       <aside className="text-medium sm:text-lg md:text-xl opacity-65">
@@ -39,9 +39,7 @@ export default function About() {
           >
             <br />
             Temporary replacement{" "}
-            <span className="animate-[bounce-arrow_1s_ease-out_infinite_alternate] inline-block">
-              &#8594;
-            </span>
+            <span className="animate-[bounce-arrow_1s_ease-out_infinite_alternate] inline-block">&#8594;</span>
           </a>
         </p>
       </aside>
