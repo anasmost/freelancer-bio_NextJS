@@ -25,7 +25,7 @@ export default function Home() {
         sizes={`(max-width: ${screens.md}) 0, (max-width: ${screens.lg}) ${screens.md}, (min-width: ${screens.lg}) ${screens.lg}`}
         className={`${styles.image} flex-1 min-w-0 max-w-4xl hidden md:block justify-self-center object-cover object-center`}
       />
-      <p className="z-10 px-10 py-3 mt-4 ml-auto self-start rounded-lg backdrop-blur-md backdrop-opacity-50 border border-red-400 animate-[appearance-in_1s_4s_normal_backwards]">
+      <p className="absolute w-max inset-x-[100%]  z-10 px-10 py-3 mt-4 ml-auto self-start rounded-lg backdrop-blur-md backdrop-opacity-50 border border-red-400 animate-[appearance-in_1s_4s_normal_backwards]">
         <a
           href="https://anasmostafa.netlify.app/"
           target="_blank"
