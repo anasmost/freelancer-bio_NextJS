@@ -80,10 +80,7 @@ export default function Bio() {
             </li>
           </ul>
         </fieldset>
-        <article
-          className="px-4 sm:px-12 pt-24 pb-40 min-[573px]:pt-20 sm:pt-14 sm:pb-28 lg:pb-24"
-          role="article"
-        >
+        <article className="px-4 sm:px-12 pt-24 pb-40 min-[573px]:pt-20 sm:pt-14 sm:pb-28 lg:pb-24" role="article">
           <h3
             className={
               dekko.className +
@@ -92,38 +89,30 @@ export default function Bio() {
           >
             <i>Fullstack</i> consultant - <i>Java</i> <i>Javascript</i> <i>Typescript</i> Programmer
           </h3>
-          <div className="lg:columns-2 lg:gap-x-10 text-balance text-justify">
+          <div className="lg:columns-2 lg:gap-x-10 text-balance text-justify md:[&>p]:!leading-8">
             <p className="mt-0 mb-3">
-              Integrating academic knowledge with additional sought for and self-taught concepts and
-              techniques, I came out a Fullstack Engineer having specialized at first in the{" "}
-              <i>Java</i>
-              <i>Javascript</i> <i>Typescript</i> programming environments consisting of{" "}
-              <i>Spring Boot</i>, <i>NodeJS</i> and <i>ReactJS</i>, while having gradually
-              experimented with multiple libraries and frameworks due to either curiosity, role
-              assignments or to performance and security pressures which lead to benchmarks then web
-              docs and new concepts, including <i>Spring Security</i> <i>Spring Data REST</i>{" "}
-              <i>Spring Web Flux</i> <i>ExpressJS</i> <i>PassportJS</i> <i>AuthJS</i> <i>NextJS</i>{" "}
-              & <i>NestJS</i>, among less known others.
+              Full-stack consultant focused on building secure, scalable products. I deliver production-ready backends
+              with <i>Java</i>/<i>Spring Boot</i> using the servlet stack and <i>Node.js</i> with <i>Express.js</i>,{" "}
+              <i>Hono</i> and <i>NestJS</i>, and front-ends in <i>Typescript</i> using <i>React</i>/<i>Next.js</i> with{" "}
+              <i>SWR</i> for data fetching and <i>Redux Toolkit</i> for state management, using <i>Tailwind</i> and UI
+              libraries like <i>Material UI</i>, <i>Ant Design</i>, <i>NextUI</i> and <i>Prime React</i>—with{" "}
+              <i>Angular</i> when needed.
             </p>
             <p className="mb-3">
-              This being said, it implies my familiarity with the majority of the expected browser
-              and server features. The later uses databases most of the time, which brings the need
-              for <i>SQL</i> skills as a universal query language for every well established
-              Relational <i>DBMS</i> and other more flexible <i>NoSQL</i> <i>DBMS</i> like{" "}
-              <i>MongoDB</i>.
+              I apply patterns that fit the framework: <i>Flux</i> style in <i>React</i>/<i>Next.js</i>,{" "}
+              <i>event-driven</i> in <i>Angular</i>, and <i>Spring</i> <i>IoC</i> with eventing where it adds value. I
+              craft <i>REST</i>/<i>GraphQL</i> APIs and follow <i>clean architecture</i> with solid layering to keep
+              codebases maintainable and fast.
             </p>
             <p className="mb-3 col-span-2">
-              Indeed, I've had the opportunity to sharpen my expertise in <i>SQL</i> and{" "}
-              <i>MongoDB</i> through roles involving <i>SQL</i> reporting and complex <i>MongoDB</i>{" "}
-              queries for large scale apps.
+              Data layer: strong with <i>SQL</i> and <i>NoSQL</i> such as <i>MongoDB</i>—from relational modeling and
+              performance tuning to aggregation pipelines—using <i>JPA</i>/<i>Hibernate</i>, <i>TypeORM</i> or native
+              queries when it makes sense.
             </p>
             <p className="mb-3">
-              Anyhow, assuming my choice of this field of endeavor of which factors and tools seem
-              to be the most volatile and various compared to others, I'm on a day to day schedule
-              of <em className="text-red-900 dark:text-red-100">technology watch</em> and{" "}
-              <em className="text-red-900 dark:text-red-100">perpetual learning</em>, stacking more
-              technologies and IT skills not limited to web development, with no consideration for
-              unreasonable rest, until the D-day.
+              Way of working: HTTP and WebSocket apps with <i>Express.js</i>, <i>Hono</i>, <i>NestJS</i> and{" "}
+              <i>Socket.io</i> when real-time is needed. Automated tests with <i>JUnit</i> and <i>Jest</i>, CI/CD and
+              observability.
             </p>
           </div>
         </article>
